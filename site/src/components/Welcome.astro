@@ -1,0 +1,164 @@
+<div id="container">
+	<header class="site-header">
+		<div class="brand-small">The Wix Wiz</div>
+		<nav class="main-nav">
+			<a class="cta-link" href="https://www.thewixwiz.com" target="_blank" rel="noreferrer">
+				Schedule Now
+			</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="hero">
+			<div class="hero-copy">
+				<h1>Pickle</h1>
+				<p>Eitan Waxman — Velo Certified Developer</p>
+				<a class="cta-button" href="https://www.thewixwiz.com" target="_blank" rel="noreferrer">
+					Schedule Now
+				</a>
+			</div>
+			<img
+				class="hero-image"
+				src="https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a99?auto=format&fit=crop&w=1200&q=80"
+				alt="Pickle on a plate"
+				fetchpriority="high"
+			/>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p class="footer-name">Eitan Waxman</p>
+		<p>
+			<a href="mailto:eitan@thewixwiz.com">eitan@thewixwiz.com</a>
+		</p>
+		<p>
+			<a href="https://www.thewixwiz.com" target="_blank" rel="noreferrer">
+				https://www.thewixwiz.com
+			</a>
+		</p>
+		<p class="footer-cred">Velo Certified Developer</p>
+	</footer>
+</div>
+
+<style>
+	:root {
+		--green-900: #0f3f27;
+		--green-700: #1f7a45;
+		--green-600: #2d8f4f;
+		--green-200: #d9f1df;
+		--green-100: #edf8f0;
+		--text-900: #102215;
+	}
+
+	#container {
+		min-height: 100%;
+		background: linear-gradient(180deg, var(--green-100) 0%, #f8fff9 65%, var(--green-200) 100%);
+		color: var(--text-900);
+		font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.site-header {
+		background: var(--green-900);
+		color: #fff;
+		padding: 1rem 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.brand-small {
+		font-size: 0.85rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	.cta-link {
+		color: #fff;
+		background: var(--green-600);
+		padding: 0.55rem 0.9rem;
+		border-radius: 999px;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	main {
+		flex: 1;
+		padding: 2rem 1.5rem;
+	}
+
+	#hero {
+		background: var(--green-200);
+		border: 2px solid var(--green-700);
+		border-radius: 1rem;
+		padding: 1.2rem;
+		display: grid;
+		grid-template-columns: 1.1fr 1fr;
+		gap: 1rem;
+		align-items: center;
+		max-width: 980px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		margin: 0 0 0.4rem;
+		font-size: 3rem;
+		color: var(--green-900);
+	}
+
+	p {
+		margin: 0 0 1rem;
+	}
+
+	.cta-button {
+		display: inline-block;
+		background: var(--green-700);
+		color: #fff;
+		text-decoration: none;
+		padding: 0.8rem 1.15rem;
+		border-radius: 0.7rem;
+		font-weight: 700;
+	}
+
+	a {
+		color: var(--green-700);
+	}
+
+	.hero-image {
+		width: 100%;
+		height: auto;
+		border-radius: 0.8rem;
+		border: 2px solid var(--green-700);
+	}
+
+	.site-footer {
+		background: var(--green-900);
+		color: #fff;
+		padding: 1.25rem 1.5rem;
+		text-align: center;
+	}
+
+	.site-footer p {
+		margin: 0.35rem 0;
+	}
+
+	.site-footer a {
+		color: #c5ffda;
+	}
+
+	.footer-name,
+	.footer-cred {
+		font-weight: 700;
+	}
+
+	@media (max-width: 760px) {
+		#hero {
+			grid-template-columns: 1fr;
+		}
+
+		h1 {
+			font-size: 2.35rem;
+		}
+	}
+</style>
